@@ -2,9 +2,11 @@ package guru.springframework.sfgpetclinic.model;
 
 import org.junit.jupiter.api.Test;
 
+import guru.springframework.sfgpetclinic.ModelTests;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-public class PersonTest {
+public class PersonTest implements ModelTests {
     
     @Test
     void groupedAssertions(){
@@ -25,6 +27,5 @@ public class PersonTest {
             () -> assertEquals(person.getLastName(), "Buck", "Last Name Failed")
         );
     }
-
 
 }
